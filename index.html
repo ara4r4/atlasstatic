@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas - Travel Agency</title>
+    <style>
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        background-color: #25d366;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a class="helpline-box" id="helpline-box-phone-1">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-number" id="phone-number-1"></p>
+            </div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Atlas logo" />
+          </a>
+
+          <div class="header-btn-group">
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61577960003927" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/atlastravel.iq/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.tiktok.com/@atlastravel.iq" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-blue.svg" alt="Atlas logo" />
+              </a>
+
+              <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>home</a>
+              </li>
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link>destinations</a>
+              </li>
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn btn-primary" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Journey to explore world</h2>
+
+            <p class="hero-text">
+              Whether it’s a relaxing getaway or an exciting adventure, we’re here to make it easy and unforgettable.
+              Your journey begins now.
+            </p>
+
+            <div class="btn-group">
+              <a class="btn btn-primary" href="contact.html">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover places</p>
+
+            <h2 class="h2 section-title">Popular Destinations</h2>
+
+            <p class="section-text"></p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img src="./assets/images/antalya.png" alt="Antalya, Turkey" loading="lazy" />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Turkey</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Antalya</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Antalya is a Turkish resort coastal city known for beaches, ancient ruins, and scenic views.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img src="./assets/images/popular-2.jpg" alt="Dubai, United Arab Emirates" loading="lazy" />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">United Arab Emirates</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Dubai</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Dubai is a modern city in the UAE known for luxury, skyscrapers, and shopping.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img src="./assets/images/istanbul.png" alt="Istanbul, Turkey" loading="lazy" />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Turkey</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Istanbul</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Istanbul is a historic Turkish city bridging Europe and Asia, rich in culture and landmarks.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <h2 class="h2 section-title">Photo Gallery</h2>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-1.jpg" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-2.jpg" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-3.jpg" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-4.jpg" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-5.jpg" alt="Gallery image" />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call To Action</p>
+
+              <h2 class="h2 section-title">Ready For Unforgatable Travel? Remember Us!</h2>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="Atlas logo" />
+            </a>
+          </div>
+
+          <div class="footer-form">
+            <h4 class="contact-title">Contact Us</h4>
+
+            <p class="contact-text">Feel free to reach out!</p>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a class="contact-link" id="helpline-box-phone-2"></a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:info@atlastravel.online" class="contact-link">info@atlastravel.online</a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Sulaymaniyah, Kurdistan Region, Iraq</address>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">&copy; 2025 | All rights reserved</p>
+
+
+        </div>
+      </div>
+    </footer>
+    <a class="whatsapp-button" target="_blank" id="whatsapp-contact">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+      const phoneNumber = "7705465566";
+      document.getElementById("helpline-box-phone-1").href = `tel:+964${phoneNumber}`;
+      document.getElementById("helpline-box-phone-2").href = `tel:+964${phoneNumber}`;
+      document.getElementById("whatsapp-contact").href = `https://wa.me/964${phoneNumber}`;
+      document.getElementById("helpline-box-phone-2").textContent = `+964 ${phoneNumber}`;
+      document.getElementById("phone-number-1").textContent = `+964 ${phoneNumber}`;
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
